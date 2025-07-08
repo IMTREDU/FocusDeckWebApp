@@ -1,70 +1,81 @@
-# Getting Started with Create React App
+# 🎯 FocusDeck
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**FocusDeck** is a productivity platform designed to help users stay on track, fight procrastination, and get things done — all in one sleek, distraction-free environment. It combines a smart task manager, an AI-powered assistant, and a Pomodoro-style focus mode into one seamless experience.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🌐 Live Demo
 
-### `npm start`
+👉 Check it out here: [https://focusdeckpro.web.app/](https://focusdeckpro.web.app/)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🎥 Demo Video
 
-### `npm test`
+📺 _Coming Soon_
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<!-- Replace this line with an embedded YouTube link once available -->
+<!-- Example: https://www.youtube.com/watch?v=xxxxxxxxxxx -->
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## ✨ Features
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- 🔐 **Authentication** – Secure sign-in with Firebase (Google & Email)
+- 📋 **Task Dashboard** – Organize, prioritize, and manage tasks with a clean UI
+- 🤖 **Dr. Focus (AI Assistant)** – Helps break down tasks, build priorities, and stay motivated
+- ⏱️ **Focus Mode** – Pomodoro-style timer that blocks distractions
+- 💬 **Quick Add / Chat-to-Task** – Add tasks via a simple chat-style input
+- 📊 **Post-Session Tracking** – Track your productivity after each session
+- 🌓 **Clean Design** – Minimalist interface to keep your mind clear and focused
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## 🛠️ Tech Stack
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- **Frontend**: React.js, Tailwind CSS
+- **Authentication & Hosting**: Firebase
+- **State Management**: Context API / React Hooks
+- **AI Assistant**: OpenAI (integrated with tasks & focus suggestions)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 🚀 Getting Started
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```bash
+# Clone the repo
+git clone https://github.com/YOUR-USERNAME/focusdeck.git
 
-## Learn More
+# Navigate into the project
+cd focusdeck
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+# Install dependencies
+npm install
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+# Run the app locally
+npm run dev
 
-### Code Splitting
+📁 Folder Structure
+bash
+Copy
+Edit
+├── public/                 # Static files
+├── src/
+│   ├── assets/             # Images and icons
+│   ├── components/         # Reusable UI components
+│   ├── views/              # Page views like Home, Dashboard, etc.
+│   ├── context/            # Global state and context providers
+│   └── utils/              # Helper functions
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+🙌 Contributing
+Pull requests are welcome! For major changes, please open an issue first to discuss what you would like to change.
 
-### Analyzing the Bundle Size
+📄 License
+This project is licensed under the MIT License.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+👤 Author
+Developed by [Islam]
+💼 Portfolio: [Soon]
+📧 Email: [IMTR.EDU@gmail.com]
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+"Your Focus. Your Flow. Your Deck."
