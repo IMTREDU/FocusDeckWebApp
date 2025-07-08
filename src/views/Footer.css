@@ -1,0 +1,144 @@
+.footer {
+  background-color: #f8fafc;
+  padding: 64px 5% 32px;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  margin-top: auto;
+  border-top: 1px solid #e2e8f0;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 48px;
+}
+
+.footer-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-column h3 {
+  color: #1E293B;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  letter-spacing: -0.01em;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.footer-column ul li {
+  margin: 0;
+}
+
+.footer-column ul li a {
+  color: #64748B;
+  text-decoration: none;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  letter-spacing: -0.01em;
+  transition: all 0.2s ease;
+  display: inline-block;
+}
+
+.footer-column ul li a:hover {
+  color: #0066FF;
+  transform: translateX(4px);
+}
+
+.footer-bottom {
+  max-width: 1200px;
+  margin: 48px auto 0;
+  padding: 32px 0 0;
+  border-top: 1px solid #e2e8f0;
+}
+
+.footer-bottom p {
+  color: #94A3B8;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin: 0;
+  text-align: center;
+  letter-spacing: -0.01em;
+}
+
+.social-links {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.social-link {
+  color: #64748B;
+  transition: color 0.2s ease;
+}
+
+.social-link:hover {
+  color: #0066FF;
+}
+
+@media (max-width: 1024px) {
+  .footer {
+    padding: 48px 5% 24px;
+  }
+
+  .footer-content {
+    gap: 32px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 40px 5% 24px;
+  }
+
+  .footer-content {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+  }
+
+  .footer-column h3 {
+    margin-bottom: 1rem;
+  }
+
+  .footer-bottom {
+    margin-top: 32px;
+    padding: 24px 0 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    padding: 32px 5% 24px;
+  }
+
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .footer-column {
+    text-align: center;
+  }
+
+  .footer-column ul {
+    align-items: center;
+  }
+
+  .footer-column ul li a:hover {
+    transform: none;
+  }
+
+  .social-links {
+    justify-content: center;
+  }
+} 

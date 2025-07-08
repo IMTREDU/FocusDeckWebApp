@@ -1,0 +1,174 @@
+/* src/Views/HomePage.css */
+.FocusDeck-homepage {
+    width: 100%;
+    max-width: 2000px;
+    margin: 0 auto;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.content-section {
+    padding: 4rem 5%;
+    box-sizing: border-box;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 2rem 0;
+}
+
+.feature-card {
+    background: white;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-4px);
+}
+
+.feature-icon {
+    width: 64px;
+    height: 64px;
+    margin-bottom: 1.5rem;
+}
+
+.feature-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #1E293B;
+}
+
+.feature-description {
+    font-size: 1rem;
+    color: #64748B;
+    line-height: 1.6;
+}
+
+.tutorials-section {
+    background: #F8FAFC;
+    padding: 4rem 5%;
+}
+
+.tutorials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    padding: 2rem 0;
+}
+
+.tutorial-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.tutorial-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.tutorial-content {
+    padding: 1.5rem;
+}
+
+.tutorial-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #1E293B;
+}
+
+.tutorial-description {
+    font-size: 0.875rem;
+    color: #64748B;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.tutorial-link {
+    color: #0066FF;
+    text-decoration: none;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.tutorial-link:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 1024px) {
+    .content-section {
+        padding: 3rem 5%;
+    }
+
+    .features-grid,
+    .tutorials-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    .content-section {
+        padding: 2.5rem 5%;
+    }
+
+    .feature-card,
+    .tutorial-card {
+        text-align: center;
+    }
+
+    .feature-icon {
+        width: 48px;
+        height: 48px;
+    }
+
+    .feature-title {
+        font-size: 1.25rem;
+    }
+
+    .tutorial-image {
+        height: 180px;
+    }
+}
+
+@media (max-width: 480px) {
+    .content-section {
+        padding: 2rem 5%;
+    }
+
+    .features-grid,
+    .tutorials-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .feature-card {
+        padding: 1.5rem;
+    }
+
+    .feature-title {
+        font-size: 1.125rem;
+    }
+
+    .tutorial-image {
+        height: 160px;
+    }
+
+    .tutorial-content {
+        padding: 1rem;
+    }
+
+    .tutorial-title {
+        font-size: 1.125rem;
+    }
+}

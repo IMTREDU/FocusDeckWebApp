@@ -1,0 +1,195 @@
+.flashcard-management {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 2rem;
+  height: 100%;
+}
+
+.decks-section {
+  background: var(--bg-primary);
+  border-radius: 8px;
+  padding: 1.5rem;
+  border: 1px solid var(--border-color);
+}
+
+.decks-section h2 {
+  margin-bottom: 1.5rem;
+  color: var(--text-primary);
+}
+
+.deck-form {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.deck-input {
+  flex: 1;
+  padding: 0.75rem;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  font-size: 1rem;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+.create-deck-btn {
+  padding: 0.75rem 1rem;
+  background: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.decks-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.deck-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.deck-item:hover {
+  background: var(--bg-hover);
+}
+
+.deck-item.selected {
+  border-color: var(--primary-color);
+  background: var(--bg-hover);
+}
+
+.deck-info h3 {
+  margin: 0 0 0.25rem 0;
+  color: var(--text-primary);
+}
+
+.deck-info span {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+.cards-section {
+  background: var(--bg-primary);
+  border-radius: 8px;
+  padding: 1.5rem;
+  border: 1px solid var(--border-color);
+}
+
+.cards-section h2 {
+  margin-bottom: 1.5rem;
+  color: var(--text-primary);
+}
+
+.card-form {
+  margin-bottom: 2rem;
+}
+
+.card-inputs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.card-input {
+  padding: 0.75rem;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  font-size: 1rem;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+.add-card-btn,
+.cancel-edit-btn {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.add-card-btn {
+  background: var(--primary-color);
+  color: white;
+  margin-right: 0.5rem;
+}
+
+.cancel-edit-btn {
+  background: var(--bg-secondary);
+  color: var(--text-primary);
+}
+
+.cards-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1rem;
+}
+
+.card-item {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  padding: 1rem;
+}
+
+.card-content {
+  margin-bottom: 1rem;
+}
+
+.card-content p {
+  margin: 0.5rem 0;
+  color: var(--text-primary);
+}
+
+.card-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.edit-card-btn,
+.delete-card-btn,
+.delete-deck-btn {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.edit-card-btn {
+  background: var(--primary-color);
+  color: white;
+}
+
+.delete-card-btn,
+.delete-deck-btn {
+  background: #dc3545;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .flashcard-management {
+    grid-template-columns: 1fr;
+  }
+
+  .card-inputs {
+    grid-template-columns: 1fr;
+  }
+
+  .cards-list {
+    grid-template-columns: 1fr;
+  }
+} 
